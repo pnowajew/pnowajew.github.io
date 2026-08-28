@@ -1530,19 +1530,17 @@ textarea.form-input::-webkit-resizer {
 }
 
 /*-----------------------------------*\
-  #ABOUT HYBRID SPLIT LAYOUT & WIDGETS
+  #ABOUT HYBRID SPLIT LAYOUT & WIDGETS (CORREGIDO)
 \*-----------------------------------*/
 
 .about-top-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 25px;
 }
 
 @media (min-width: 1250px) {
   .about-top-grid {
-    display: grid;
-    /* La columna izquierda con el primer párrafo toma 1.25 partes y la derecha 1 parte */
     grid-template-columns: 1.25fr 1fr;
     gap: 30px;
     align-items: start;
@@ -1552,16 +1550,17 @@ textarea.form-input::-webkit-resizer {
 .about-weather-column {
   display: flex;
   flex-direction: column;
-  gap: 15px !important; /* Aumentamos de 15px a 20px para separar elegantemente ambos widgets */
+  gap: 20px;
+  width: 100%;
 }
 
 .forecast-widget-title {
   font-size: var(--fs-5);
-  margin-bottom: 3px !important; /* Reduce el espacio (puedes probar con 4px o 8px según prefieras) */  
+  margin-bottom: 3px !important;
   margin-top: 0px !important;
   text-align: left;
   color: var(--white-2);
-  padding-left: 2px; /* Pequeño respiro lateral para alinear con el borde de las tarjetas */
+  padding-left: 2px;
 }
 
 .weather-forecast-row {
@@ -1622,6 +1621,7 @@ textarea.form-input::-webkit-resizer {
   background: var(--eerie-black-1) !important;
   border-radius: 14px;
   padding: 16px !important;
+  box-sizing: border-box;
 }
 
 .satellite-link {
@@ -1635,7 +1635,7 @@ textarea.form-input::-webkit-resizer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px !important; /* Reduce el espacio entre la imagen y el título */
+  margin-bottom: 10px !important;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--jet);
@@ -1649,6 +1649,7 @@ textarea.form-input::-webkit-resizer {
   border-radius: 10px;
   cursor: pointer;
   transition: var(--transition-1);
+  display: block;
 }
 
 .satellite-link:hover .satellite-img {
@@ -1656,7 +1657,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .satellite-title {
-  font-size: var(--fs-7) !important; /* Título más compacto */
+  font-size: var(--fs-7) !important;
   font-weight: var(--fw-500);
   margin-bottom: 4px !important;
   color: var(--white-2);
@@ -1665,7 +1666,7 @@ textarea.form-input::-webkit-resizer {
 
 .satellite-desc {
   color: var(--light-gray);
-  font-size: var(--fs-8) !important; /* Letra más chica y delicada (11px) */
+  font-size: var(--fs-8) !important;
   line-height: 1.4;
   margin: 0;
 }
@@ -1843,9 +1844,9 @@ textarea.form-input::-webkit-resizer {
   }
 
   .about-text p {
-  text-align: justify !important;
-  text-justify: inter-word; /* Mejora la distribución del espacio entre palabras */
-}
+    text-align: justify !important;
+    text-justify: inter-word;
+  }
 
   /* service */
 
