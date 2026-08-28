@@ -1,85 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priscilla Nowajewski</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priscilla Nowajewski</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/icon/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/icon/my-avatar.png"
+              alt="Priscilla Nowajewski"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Priscilla Nowajewski">
+              Priscilla <br />
+              Nowajewski
+            </h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/icon/my-avatar.png" alt="Priscilla Nowajewski" width="80">
-        </figure>
+            <p class="title">
+              Data Scientist &<br />Planetary Science Researcher
+            </p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Priscilla Nowajewski">Priscilla <br> Nowajewski</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title"> Data Scientist &<br>Planetary Science Researcher </p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
+          <ul class="contacts-list">
             <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="qr-code-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="qr-code-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Digital Business Card</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Digital Business Card</p>
+                <a
+                  href="https://hihello.com/p/6d32d950-3747-4406-8adb-608aa0946a6b"
+                  target="_blank"
+                  class="contact-link"
+                  >View HiHello Card</a
+                >
+              </div>
+            </li>
 
-              <a href="https://hihello.com/p/6d32d950-3747-4406-8adb-608aa0946a6b" target="_blank" class="contact-link">View HiHello Card</a>
-            </div>
-
-          </li>
-
-          <!--
+            <!--
           <li class="contact-item">
 
             <div class="icon-box">
@@ -95,52 +106,55 @@
           </li>
           
           --->
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="id-card-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="id-card-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">ORCID iD</p>
 
-            <div class="contact-info">
-              <p class="contact-title">ORCID iD</p>
+                <a
+                  href="https://orcid.org/0000-0003-2220-236X"
+                  target="_blank"
+                  class="contact-link"
+                  >0003-2220-236X</a
+                >
+              </div>
+            </li>
 
-              <a href="https://orcid.org/0000-0003-2220-236X" target="_blank" class="contact-link">0003-2220-236X</a>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          </li>
-          
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+                <address>Santiago, Chile</address>
+              </div>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
 
-              <address>Santiago, Chile</address>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Connect</p>
 
-          </li>
+                <a
+                  href="https://www.linkedin.com/in/pnowajew"
+                  target="_blank"
+                  class="contact-link"
+                  >LinkedIn Profile</a
+                >
+              </div>
+            </li>
+          </ul>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Connect</p>
-
-              <a href="https://www.linkedin.com/in/pnowajew" target="_blank" class="contact-link">LinkedIn Profile</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-        <!--
+          <div class="separator"></div>
+          <!--
         <ul class="social-list">
 
           <li class="social-item">
@@ -157,1179 +171,1803 @@
 
         </ul>
        --->
-      </div>
+        </div>
+      </aside>
 
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Publications</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a scientist and engineer from Santiago, Chile, with a PhD in Fluid Dynamics and Climatology and over 10 years of experience working with data.
-            My work bridges research and real-world industrial applications by using machine learning, automation and optimization algorithms, and time series prediction to turn complex processes into better operational decisions.
-            I enjoy turning complex problems into simple, beautiful, automated plots. 
-            <br>
-            <br>  
-            As a data scientist my approach is to detect patterns and anomalies, based on the physical phenomaena, extracting the hidden information within data to forecast trends with high accuracy.
-            By combining my background in astronomy, fluid dynamics, and climatology with advanced data analytics and cloud tools, my approach is to understand data behavior by making it stop being a black box and become a practical tool to drive innovation and understand the world.
-          </p>
-        </section>
-
-       
-
-               
-
-        <!--
-          - service
-        -->
-        
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/icon/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title"> Atmospheric & Climatological Modeling </h4>
-
-                <p class="service-item-text">
-                  I develop automated Python pipelines using APIs from cloud services to generate real-time meteorological forecasts and historical climatologies.
-                </p>
-              </div>
-
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/icon/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Geospatial & Spatial Data</h4>
-
-                <p class="service-item-text">
-                  I apply my astronomical knowledge to process raster, vector, and earth-observation data using QGIS workflows and Python for high-precision spatial analysis.
-                </p>
-              </div>
-
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/icon/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">GPU Cluster & Cloud Automation</h4>
-
-                <p class="service-item-text">
-                  I build Bash and Python automation frameworks to be applied at GPU clusters or cloud environments optimizing calculation process.
-                </p>
-              </div>
-
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/icon/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Art & Science Outreach </h4>
-
-                <p class="service-item-text">
-                  I combine visual arts with science, backed by experience in content creation, public speaking, and media interviews.
-                </p>
-              </div>
-
-            </li>
-<!--
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/icon/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Scientific Business (EBCT) </h4>
-
-                <p class="service-item-text">
-                  My entrepreneurial approach includes developing technology-based scientific business models and participating in specialized CORFO funding programs.
-                </p>
-              </div>
-
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Outreach</button>
             </li>
 
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Publications</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
           </ul>
--->
-        </section>
-        <!--
-          - Weather Dashboard Grid (Adapted for Santiago Weather & Visualizations)
-        -->
-        
-        <section class="weather-dashboard" style="margin-bottom: 30px;">
+        </nav>
 
-          <h3 class="h3 testimonials-title" style="margin-bottom: 25px; text-align: center;">Today's Santiago Weather</h3>
+        <!-- ======================================== -->
+        <!-- ABOUT -->
+        <!-- ======================================== -->
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <article class="active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-            <!-- Card 1: ECMWF Weather Plot -->
-            <div class="content-card" style="padding: 20px; background: var(--eerie-black-2); border: 1px solid var(--jet); border-radius: 14px;">
-
-              <figure style="background: var(--eerie-black-1); display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border-radius: 12px; overflow: hidden;">
-                <a href="./assets/images/santiago_weather.png" target="_blank" title="Click to view full-size image" style="display: block; width: 100%;">
-                  <img src="./assets/images/santiago_weather.png" alt="ECMWF Santiago Weather Forecast" loading="lazy" style="width: 100%; height: auto; object-fit: cover; border-radius: 12px; cursor: pointer;">
-                </a>
-              </figure>
-
-              <h4 class="h4 testimonials-item-title" style="margin-bottom: 10px;">Santiago's 10-Day Temperature and Cloud Cover Forecast</h4>
-
-              <div class="testimonials-text">
-                <p style="color: var(--light-gray); font-size: var(--fs-6); line-height: 1.6;">
-                  The plot present the ECMWF IFS 0.25° model for Santiago coordinates (-33.45°, -70.66°). The forecast is updated three times daily by using github actions as server.
+          <div class="about-top-grid">
+            <section class="about-text-column">
+              <div class="about-text">
+                <p style="margin-bottom: 15px">
+                  I'm a scientist and engineer from Santiago, Chile, with a PhD
+                  in Fluid Dynamics and Climatology and over 10 years of
+                  experience working with data.
+                </p>
+                <p style="margin-bottom: 15px">
+                  My work bridges research and real-world industrial
+                  applications by using machine learning, automation and
+                  optimization algorithms, and time series prediction to turn
+                  complex processes into better operational decisions. I enjoy
+                  turning complex problems into simple, beautiful, automated
+                  plots.
+                </p>
+                <p style="margin-top: 15px">
+                  As a data scientist my approach is to detect patterns and
+                  anomalies, based on the physical phenomena, extracting the
+                  hidden information within data to forecast trends with high
+                  accuracy.
+                </p>
+                <p style="margin-bottom: 15px">
+                  By combining my background in astronomy, fluid dynamics, and
+                  climatology with advanced data analytics and cloud tools, my
+                  approach is to understand data behavior by making it stop
+                  being a black box and become a practical tool to drive
+                  innovation and understand the world.
                 </p>
               </div>
+            </section>
 
-            </div>
+            <div class="about-right-column">
+              <aside class="about-weather-column">
+                <h3 class="h3 forecast-widget-title">
+                  Santiago 3-Day Forecast
+                </h3>
+                <div
+                  class="weather-forecast-row"
+                  id="weather-cards-container"
+                ></div>
+              </aside>
 
-            <!-- Card 2: Satellite Imagery -->
-            <div class="content-card" style="padding: 20px; background: var(--eerie-black-2); border: 1px solid var(--jet); border-radius: 14px;">
-
-              <figure style="background: var(--eerie-black-1); display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border-radius: 12px; overflow: hidden;">
-                <a href="./assets/images/satellite_santiago_screenshot.gif" target="_blank" title="Click to view full-size image" style="display: block; width: 100%;">
-                  <img src="./assets/images/satellite_santiago_screenshot.gif" alt="Satellite Imagery Santiago" loading="lazy" style="width: 100%; height: auto; object-fit: cover; border-radius: 12px; cursor: pointer;">
+              <div class="content-card satellite-card-item">
+                <a
+                  href="./assets/images/satellite_santiago_screenshot.gif"
+                  target="_blank"
+                  title="Click to view full-size image"
+                  class="satellite-link"
+                >
+                  <figure class="satellite-figure">
+                    <img
+                      src="./assets/images/satellite_santiago_screenshot.gif"
+                      alt="Satellite Imagery Santiago"
+                      loading="lazy"
+                      class="satellite-img"
+                    />
+                  </figure>
                 </a>
-              </figure>
 
-              <h4 class="h4 testimonials-item-title" style="margin-bottom: 10px;">Regional Satellite View</h4>
+                <h4 class="h4 satellite-title">Regional Satellite View</h4>
 
-              <div class="testimonials-text">
-                <p style="color: var(--light-gray); font-size: var(--fs-6); line-height: 1.6;">
-                  Geocolor satellite imagery from NOAA's GOES-19. The animation is updated daily next to the forecast plot to visualize atmospheric dynamics in South American Region.
-                </p>
+                <div class="satellite-text-box">
+                  <p class="satellite-desc">
+                    Geocolor satellite imagery from NOAA's GOES-19. The
+                    animation is updated daily next to the forecast plot to
+                    visualize atmospheric dynamics in South American Region.
+                  </p>
+                </div>
               </div>
-
             </div>
-
           </div>
 
-        </section>
-        
+          <div
+            class="about-weather-column"
+            style="padding: 0px; overflow: hidden"
+          >
+            <iframe
+              src="./assets/scripts/santiago_weather_interactive.html"
+              style="
+                width: 100%;
+                height: 380px;
+                border: none;
+                background: transparent;
+              "
+              scrolling="no"
+            ></iframe>
+          </div>
 
-         <!-- =========================================================
-          - REMOVED SECTIONS (TESTIMONIALS, MODAL, CLIENTS) START HERE
-          ========================================================= -->
+          <section class="service" style="margin-top: 40px">
+            <h3 class="h3 service-title">My Services</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/icon/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Atmospheric & Climatological Modeling
+                  </h4>
+                  <p class="service-item-text">
+                    I develop automated Python pipelines using APIs from cloud
+                    services to generate real-time meteorological forecasts and
+                    historical climatologies. As the ones you see above 😉.
+                  </p>
+                </div>
+              </li>
 
-        <!--
-          - testimonials modal
-        -->
-        
-        <div class="modal-container" data-modal-container>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/icon/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Geospatial & Spatial Data
+                  </h4>
+                  <p class="service-item-text">
+                    I apply my astronomical knowledge to process raster, vector,
+                    and earth-observation data using QGIS workflows and Python
+                    for high-precision spatial analysis.
+                  </p>
+                </div>
+              </li>
 
-          <div class="overlay" data-overlay></div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/icon/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    GPU Cluster & Cloud Automation
+                  </h4>
+                  <p class="service-item-text">
+                    I build Bash and Python automation frameworks to be applied
+                    at GPU clusters or cloud environments optimizing calculation
+                    process.
+                  </p>
+                </div>
+              </li>
 
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/icon/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/icon/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/icon/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Art & Science Outreach</h4>
+                  <p class="service-item-text">
+                    I combine visual arts with science, backed by experience in
+                    content creation, public speaking, and media interviews.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </section>
 
-        </div>
-        
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/icon/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+                <img src="./assets/icon/icon-quote.svg" alt="quote icon" />
+              </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                <time datetime="2021-06-14">14 June, 2021</time>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
 
-        <!--
-          - clients
-        -->
-        <!--
-        <section class="clients">
+        <!-- ===================================== -->
+        <!--- #RESUME -->
+        <!--===================================== -->
 
-          <h3 class="h3 clients-title">Clients</h3>
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-          <ul class="clients-list has-scrollbar">
+          <!-- Education Section (Streamlined & Compact) -->
+          <section class="timeline" style="margin-bottom: 35px">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/icon/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/icon/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/icon/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/icon/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/icon/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/icon/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-        -->
-      </article>
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-
-        <!-- Education Section (Streamlined & Compact) -->
-        <section class="timeline" style="margin-bottom: 35px;">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Ph.D. in Fluid Dynamics (Specialization in Atmospheric Dynamics)</h4>
-              <span>2019</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">Universidad de Chile, Chile</p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Diploma in Big Data & Data Science</h4>
-              <span>2018</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">Pontifícia Universidad Católica de Valparaíso (PUCV), Chile</p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">B.Sc. in Physics</h4>
-              <span>2008</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">Universidad de Chile, Chile</p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!-- Experience Section (Streamlined, Outline Only, Ordered New to Old) -->
-        <section class="timeline" style="margin-bottom: 35px;">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Key Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <!-- 1. ALMA (Current / Newest) -->
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Data Scientist</h4>
-              <span>September 2021 — May 2026</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">
-                <strong>Joint ALMA Observatory (Associated Universities, Inc.)</strong> | Santiago & San Pedro de Atacama, Chile
-              </p>
-            </li>
-
-            <!-- 2. Entrepreneurship -->
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Executive Director & Founder</h4>
-              <span>2018 — 2021</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">
-                <strong>Fundación Ciencias Planetarias & The Mars Society Chile</strong> | Valparaíso & Santiago, Chile
-              </p>
-            </li>
-
-            <!-- 3. Teaching & Thesis Advising (Oldest / Ongoing) -->
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Thesis Advisor & Lecturer (Part-Time)</h4>
-              <span>2012 — Present</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">
-                <strong>Universidad Andrés Bello / UdeC / UAI / UDD / Fundación Ciencias Planetarias / Universidad de Chile</strong> | Chile
-              </p>
-            </li>
-
-          </ol>
-        </section> <!-- THIS CLOSING TAG WAS MISSING -->
-
-        <!-- Thesis Guided Section -->
-        <section class="timeline" style="margin-bottom: 35px;">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Thesis Guided</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Astronomy program, Universidad de Concepción</h4>
-              <span>July 2024</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">
-                <strong>Barra, K.</strong> (2024) – <em>"Analysis of the change in wind orientation and intensity during the 2007 (Year 28) Global Dust Storm on Mars"</em>
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Geology Undergraduate Program, Universidad Andrés Bello</h4>
-              <span>2022 — 2023</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8); margin-bottom: 8px;">
-                <strong>Armijo, J.</strong> (2023) – <em>"Relation between the mineralogical composition of the surface, the geomorphology and the occurrences of dust devils in the Hellas basin on Mars Southern Hemisphere, during the Martian years 28, 31 and 34"</em>
-              </p>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">
-                <strong>Turner, S.</strong> (2022) – <em>"Yardangs erosion in the Fossae Medusae formation on Mars associated with the occurrence of global dust storms"</em>
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Computer Engineer Undergraduate Program, Universidad Andrés Bello</h4>
-              <span>2019 — 2020</span>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8); margin-bottom: 8px;">
-                <strong>Bueno, A.</strong> (2020) – <em>"Automatic detection of halos at Mars SPRC using Machine Learning."</em>
-              </p>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8); margin-bottom: 8px;">
-                <strong>Cáceres, E.</strong> (2019) – <em>"Low-cost environmental monitoring station for the Quintero and Puchuncaví sector."</em>
-              </p>
-              <p class="timeline-text" style="color: var(--light-gray); font-size: var(--fs-8);">
-                <strong>Jensen, B.</strong> (2019) – <em>"Creation of a Low-cost Radio Telescope as an astronomical outreach project."</em>
-              </p>
-            </li>
-
-          </ol>
-
-        </section>  
-
-        <!-- Skills Section -->
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Technical Skills Summary</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Data Science & Analytics</h5>
-                <data value="95">95%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Software & DevOps (Python, Linux/Bash, Git)</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Atmospheric Modeling & Simulation</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Leadership, Strategy & Outreach</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-      
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Codes</h2>
-        </header>
-
-        <!-- Prominent Portfolio Repository Link -->
-        <section style="margin-bottom: 25px;">
-          <div class="content-card" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 20px 25px; min-height: auto;">
-            <div style="display: flex; align-items: center; gap: 15px;">
-              <div class="icon-box" style="font-size: 24px;">
-                <ion-icon name="logo-github"></ion-icon>
-              </div>
-              <div>
-                <h4 class="h4" style="margin-bottom: 3px;">Explore the Full Source Code</h4>
-                <p class="text-sm" style="color: var(--light-gray); font-size: var(--fs-8);">Browse scripts, notebooks, and assets in my GitHub repository.</p>
-              </div>
-            </div>
-            <a href="https://github.com/pnowajew/portfolio.git" target="_blank" class="form-btn" style="display: inline-flex; width: auto; padding: 8px 16px; font-size: var(--fs-8);">
-              <ion-icon name="code-slash-outline"></ion-icon>
-              <span>Repository</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="projects">
-
-          <!-- Updated Filters matching your folders -->
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Numerical Modelling</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Data Visualization</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Data Science</button>
-            </li>
-
-          </ul>
-
-          <!-- Mobile Dropdown Filter -->
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Ph.D. in Fluid Dynamics (Specialization in Atmospheric
+                  Dynamics)
+                </h4>
+                <span>2019</span>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  Universidad de Chile, Chile
+                </p>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Numerical Modelling</button>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Diploma in Big Data & Data Science
+                </h4>
+                <span>2018</span>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  Pontifícia Universidad Católica de Valparaíso (PUCV), Chile
+                </p>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Data Visualization</button>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">B.Sc. in Physics</h4>
+                <span>2008</span>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  Universidad de Chile, Chile
+                </p>
               </li>
+            </ol>
+          </section>
 
-              <li class="select-item">
-                <button data-select-item>Data Science</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <!-- Project Items using your categories -->
-          <ul class="project-list">
-
-            <!-- Astronomy Example -->
-            <li class="project-item active" data-filter-item data-category="numerical modelling">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/icon/project-2.jpg" alt="Mars-quakes" loading="lazy">
-                </figure>
-                <h3 class="project-title">Mars-quakes modelling</h3>
-                <p class="project-category">Numerical Modelling</p>
-              </a>
-            </li>
-
-            <!-- Planetary Science Example -->
-            <li class="project-item active" data-filter-item data-category="numerical modelling">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/icon/project-4.jpg" alt="Sun proper motion" loading="lazy">
-                </figure>
-                <h3 class="project-title">Sun proper motion</h3>
-                <p class="project-category">Numerical Modelling</p>
-              </a>
-            </li>
-
-            <!-- Data Science Example -->
-            <li class="project-item active" data-filter-item data-category="data science">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/icon/project-3.jpg" alt="NDVI prediction" loading="lazy">
-                </figure>
-                <h3 class="project-title">NDVI prediction</h3>
-                <p class="project-category">Data Science</p>
-              </a>
-            </li>
-
-            <!-- Data Science Example -->
-            <li class="project-item active" data-filter-item data-category="Data Visualization">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/icon/project-1.jpg" alt="Sky map" loading="lazy">
-                </figure>
-                <h3 class="project-title">Santiago's Skymap</h3>
-                <p class="project-category">Data Visualization</p>
-              </a>
-            </li>
-
-            
-
-            
-          </ul>
-
-        </section>
-
-      </article>
-
-<!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">V-Blog</h2>
-        </header>
-
-<!-- Prominent Medium Page Link -->
-        <section style="margin-bottom: 25px;">
-          <div class="content-card" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 20px 25px; min-height: auto;">
-            <div style="display: flex; align-items: center; gap: 15px;">
-              <div class="icon-box" style="font-size: 24px;">
-                <ion-icon name="logo-medium"></ion-icon>
+          <!-- Experience Section (Streamlined, Outline Only, Ordered New to Old) -->
+          <section class="timeline" style="margin-bottom: 35px">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
               </div>
-              <div>
-                <h4 class="h4" style="margin-bottom: 3px;">Read My Articles on Medium</h4>
-                <p class="text-sm" style="color: var(--light-gray); font-size: var(--fs-8);">Explore stories, insights, and tutorials on science and data.</p>
-              </div>
+
+              <h3 class="h3">Key Experience</h3>
             </div>
-            <a href="https://medium.com/@priscillanowajewski" target="_blank" class="form-btn" style="display: inline-flex; width: auto; padding: 8px 16px; font-size: var(--fs-8);">
-              <ion-icon name="book-outline"></ion-icon>
-              <span>Read Articles</span>
-            </a>
-          </div>
-        </section>       
-        
-        <!-- Prominent YouTube Channel Link -->
-        <section style="margin-bottom: 25px;">
-          <div class="content-card" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 20px 25px; min-height: auto;">
-            <div style="display: flex; align-items: center; gap: 15px;">
-              <div class="icon-box" style="font-size: 24px;">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </div>
-              <div>
-                <h4 class="h4" style="margin-bottom: 3px;">Watch My Videos on YouTube</h4>
-                <p class="text-sm" style="color: var(--light-gray); font-size: var(--fs-8);">Explore a sample of my TV interviews! Soon talks, and visual walkthroughs on science and data.</p>
-              </div>
-            </div>
-            <a href="https://www.youtube.com/@priscilla.nowajewski" target="_blank" class="form-btn" style="display: inline-flex; width: auto; padding: 8px 16px; font-size: var(--fs-8);">
-              <ion-icon name="videocam-outline"></ion-icon>
-              <span>Watch Videos</span>
-            </a>
-          </div>
-        </section>
 
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-            <!--
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/icon/blog-1.jpg" alt="My Medium" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Medium</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-01-15">Jan 15, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">My Medium</h3>
-
-                  <p class="blog-text">
-                    Check out my planetary articles in Spanish and English.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-            --->
-            <li class="blog-post-item">
-              <a href="https://medium.com/tmschile/what-is-a-planet-6b7f4d0584d0" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/icon/blog-2.jpg" alt="What is a Planet?" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Astronomy</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-10-25">Oct 25, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">What is a Planet?</h3>
-
-                  <p class="blog-text">
-                    Exploring the definitions, criteria, and complexities of planetary classification across systems.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/tmschile/habitabilidad-planetaria-4a7515db21c2" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/icon/blog-3.jpg" alt="Habitabilidad Planetaria" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Climatology</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-08-05">Aug 5, 2023</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Habitabilidad Planetaria</h3>
-
-                  <p class="blog-text">
-                    Analyzing atmospheric conditions and fluid dynamics required to sustain surface water.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/@priscillanowajewski/meteor%C3%B3logos-o-mentirologos-67b29c5e72ce" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/icon/blog-4.jpg" alt="Meteorólogos o Mentirólogos" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Weather</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-05-20">May 20, 2023</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">¿Meteorólogos o Mentirólogos?</h3>
-
-                  <p class="blog-text">
-                    Understanding numerical weather prediction models and why forecasts sometimes miss the mark.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <!--
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/icon/blog-5.jpg" alt="Fermi Paradox" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Science</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-02-14">Feb 14, 2023</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Fermi Paradox and Three-Body Problem</h3>
-
-                  <p class="blog-text">
-                    Reflections on orbital mechanics, chaos theory, and the vast scale of the universe.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            --->
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/tmschile/se-imaginan-una-vida-sin-exoplanetas-212620c12473" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/icon/blog-6.jpg" alt="Exoplanetas" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Astrophysics</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-12-01">Dec 1, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">¿Se imaginan una vida sin exoplanetas?</h3>
-
-                  <p class="blog-text">
-                    The revolutionary impact of modern detection methods on our understanding of planetary systems.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-      <!--
-        - #PUBLICATIONS
-      -->
-
-      <article class="publications" data-page="publications">
-
-        <header>
-          <h2 class="h2 article-title">Publications</h2>
-        </header>
-
-      <!-- Prominent Google Scholar Link -->
-        <section style="margin-bottom: 25px;">
-          <div class="content-card" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 20px 25px; min-height: auto;">
-            <div style="display: flex; align-items: center; gap: 15px;">
-              <div class="icon-box" style="font-size: 24px;">
+            <ol class="timeline-list">
+              <!-- 1. ALMA (Current / Newest) -->
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Data Scientist</h4>
+                <span>September 2021 — May 2026</span>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  <strong
+                    >Joint ALMA Observatory (Associated Universities,
+                    Inc.)</strong
+                  >
+                  | Santiago & San Pedro de Atacama, Chile
+                </p>
+              </li>
+
+              <!-- 2. Entrepreneurship -->
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Executive Director & Founder
+                </h4>
+                <span>2018 — 2021</span>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  <strong
+                    >Fundación Ciencias Planetarias & The Mars Society
+                    Chile</strong
+                  >
+                  | Valparaíso & Santiago, Chile
+                </p>
+              </li>
+
+              <!-- 3. Teaching & Thesis Advising (Oldest / Ongoing) -->
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Thesis Advisor & Lecturer (Part-Time)
+                </h4>
+                <span>2012 — Present</span>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  <strong
+                    >Universidad Andrés Bello / UdeC / UAI / UDD / Fundación
+                    Ciencias Planetarias / Universidad de Chile</strong
+                  >
+                  | Chile
+                </p>
+              </li>
+            </ol>
+          </section>
+          <!-- THIS CLOSING TAG WAS MISSING -->
+
+          <!-- Thesis Guided Section -->
+          <section class="timeline" style="margin-bottom: 35px">
+            <div class="title-wrapper">
+              <div class="icon-box">
                 <ion-icon name="school-outline"></ion-icon>
               </div>
-              <div>
-                <h4 class="h4" style="margin-bottom: 3px;">Explore My Research Publications</h4>
-                <p class="text-sm" style="color: var(--light-gray); font-size: var(--fs-8);">Browse my complete peer-reviewed papers and academic citations on Google Scholar.</p>
+
+              <h3 class="h3">Thesis Guided</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Astronomy program, Universidad de Concepción
+                </h4>
+                <span>July 2024</span>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  <strong>Barra, K.</strong> (2024) –
+                  <em
+                    >"Analysis of the change in wind orientation and intensity
+                    during the 2007 (Year 28) Global Dust Storm on Mars"</em
+                  >
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Geology Undergraduate Program, Universidad Andrés Bello
+                </h4>
+                <span>2022 — 2023</span>
+                <p
+                  class="timeline-text"
+                  style="
+                    color: var(--light-gray);
+                    font-size: var(--fs-8);
+                    margin-bottom: 8px;
+                  "
+                >
+                  <strong>Armijo, J.</strong> (2023) –
+                  <em
+                    >"Relation between the mineralogical composition of the
+                    surface, the geomorphology and the occurrences of dust
+                    devils in the Hellas basin on Mars Southern Hemisphere,
+                    during the Martian years 28, 31 and 34"</em
+                  >
+                </p>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  <strong>Turner, S.</strong> (2022) –
+                  <em
+                    >"Yardangs erosion in the Fossae Medusae formation on Mars
+                    associated with the occurrence of global dust storms"</em
+                  >
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Computer Engineer Undergraduate Program, Universidad Andrés
+                  Bello
+                </h4>
+                <span>2019 — 2020</span>
+                <p
+                  class="timeline-text"
+                  style="
+                    color: var(--light-gray);
+                    font-size: var(--fs-8);
+                    margin-bottom: 8px;
+                  "
+                >
+                  <strong>Bueno, A.</strong> (2020) –
+                  <em
+                    >"Automatic detection of halos at Mars SPRC using Machine
+                    Learning."</em
+                  >
+                </p>
+                <p
+                  class="timeline-text"
+                  style="
+                    color: var(--light-gray);
+                    font-size: var(--fs-8);
+                    margin-bottom: 8px;
+                  "
+                >
+                  <strong>Cáceres, E.</strong> (2019) –
+                  <em
+                    >"Low-cost environmental monitoring station for the Quintero
+                    and Puchuncaví sector."</em
+                  >
+                </p>
+                <p
+                  class="timeline-text"
+                  style="color: var(--light-gray); font-size: var(--fs-8)"
+                >
+                  <strong>Jensen, B.</strong> (2019) –
+                  <em
+                    >"Creation of a Low-cost Radio Telescope as an astronomical
+                    outreach project."</em
+                  >
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <!-- Skills Section -->
+          <section class="skill">
+            <h3 class="h3 skills-title">Technical Skills Summary</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Science & Analytics</h5>
+                  <data value="95">95%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Software & DevOps (Python, Linux/Bash, Git)
+                  </h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Atmospheric Modeling & Simulation</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Leadership, Strategy & Outreach</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- =========================================== -->
+        <!-- - #PORTFOLIO-->
+        <!-- =========================================== -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <!-- Prominent Portfolio Repository Link -->
+          <section style="margin-bottom: 25px">
+            <div
+              class="content-card"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 25px;
+                min-height: auto;
+              "
+            >
+              <div style="display: flex; align-items: center; gap: 15px">
+                <div class="icon-box" style="font-size: 24px">
+                  <ion-icon name="logo-github"></ion-icon>
+                </div>
+                <div>
+                  <h4 class="h4" style="margin-bottom: 3px">
+                    Explore the Full Source Code
+                  </h4>
+                  <p
+                    class="text-sm"
+                    style="color: var(--light-gray); font-size: var(--fs-8)"
+                  >
+                    Browse scripts, notebooks, and assets in my GitHub
+                    repository.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://github.com/pnowajew/portfolio.git"
+                target="_blank"
+                class="form-btn"
+                style="
+                  display: inline-flex;
+                  width: auto;
+                  padding: 8px 16px;
+                  font-size: var(--fs-8);
+                "
+              >
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <span>Repository</span>
+              </a>
+            </div>
+
+            <!--
+          - Weather Dashboard Grid (Adapted for Santiago Weather & Visualizations)
+        -->
+
+            <section class="weather-dashboard" style="margin-bottom: 30px">
+              <h3
+                class="h3 testimonials-title"
+                style="margin-bottom: 25px; text-align: center"
+              >
+                Today's Santiago Weather
+              </h3>
+
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                  gap: 20px;
+                "
+              >
+                <!-- Card 1: ECMWF Weather Plot -->
+                <div
+                  class="content-card"
+                  style="
+                    padding: 20px;
+                    background: var(--eerie-black-2);
+                    border: 1px solid var(--jet);
+                    border-radius: 14px;
+                  "
+                >
+                  <figure
+                    style="
+                      background: var(--eerie-black-1);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin-bottom: 15px;
+                      border-radius: 12px;
+                      overflow: hidden;
+                    "
+                  >
+                    <a
+                      href="./assets/images/santiago_weather.png"
+                      target="_blank"
+                      title="Click to view full-size image"
+                      style="display: block; width: 100%"
+                    >
+                      <img
+                        src="./assets/images/santiago_weather.png"
+                        alt="ECMWF Santiago Weather Forecast"
+                        loading="lazy"
+                        style="
+                          width: 100%;
+                          height: auto;
+                          object-fit: cover;
+                          border-radius: 12px;
+                          cursor: pointer;
+                        "
+                      />
+                    </a>
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    style="margin-bottom: 10px"
+                  >
+                    Santiago's 10-Day Temperature and Cloud Cover Forecast
+                  </h4>
+
+                  <div class="testimonials-text">
+                    <p
+                      style="
+                        color: var(--light-gray);
+                        font-size: var(--fs-6);
+                        line-height: 1.6;
+                      "
+                    >
+                      The plot present the ECMWF IFS 0.25° model for Santiago
+                      coordinates (-33.45°, -70.66°). The forecast is updated
+                      three times daily by using github actions as server.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2: Satellite Imagery -->
+                <div
+                  class="content-card"
+                  style="
+                    padding: 20px;
+                    background: var(--eerie-black-2);
+                    border: 1px solid var(--jet);
+                    border-radius: 14px;
+                  "
+                >
+                  <figure
+                    style="
+                      background: var(--eerie-black-1);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin-bottom: 15px;
+                      border-radius: 12px;
+                      overflow: hidden;
+                    "
+                  >
+                    <a
+                      href="./assets/images/satellite_santiago_screenshot.gif"
+                      target="_blank"
+                      title="Click to view full-size image"
+                      style="display: block; width: 100%"
+                    >
+                      <img
+                        src="./assets/images/satellite_santiago_screenshot.gif"
+                        alt="Satellite Imagery Santiago"
+                        loading="lazy"
+                        style="
+                          width: 100%;
+                          height: auto;
+                          object-fit: cover;
+                          border-radius: 12px;
+                          cursor: pointer;
+                        "
+                      />
+                    </a>
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    style="margin-bottom: 10px"
+                  >
+                    Regional Satellite View
+                  </h4>
+
+                  <div class="testimonials-text">
+                    <p
+                      style="
+                        color: var(--light-gray);
+                        font-size: var(--fs-6);
+                        line-height: 1.6;
+                      "
+                    >
+                      Geocolor satellite imagery from NOAA's GOES-19. The
+                      animation is updated daily next to the forecast plot to
+                      visualize atmospheric dynamics in South American Region.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section class="projects">
+            <!-- Updated Filters matching your folders -->
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Numerical Modelling</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Data Visualization</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Data Science</button>
+              </li>
+            </ul>
+
+            <!-- Mobile Dropdown Filter -->
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Numerical Modelling</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Data Visualization</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Data Science</button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Project Items using your categories -->
+            <ul class="project-list">
+              <!-- Astronomy Example -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="numerical modelling"
+              >
+                <a
+                  href="https://github.com/pnowajew/portfolio/blob/main/planetary_science/Solar_system_Earthquakes/trayectoria_onda_insight.png"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/icon/project-2.jpg"
+                      alt="Mars-quakes"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Mars-quakes modelling</h3>
+                  <p class="project-category">Numerical Modelling</p>
+                </a>
+              </li>
+
+              <!-- Planetary Science Example -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="numerical modelling"
+              >
+                <a
+                  href="https://github.com/pnowajew/portfolio/blob/main/planetary_science/sun_proper_motion/sun_orbit_wobble.gif"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/icon/project-4.jpg"
+                      alt="Sun proper motion"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Sun proper motion</h3>
+                  <p class="project-category">Numerical Modelling</p>
+                </a>
+              </li>
+
+              <!-- Data Science Example -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data science"
+              >
+                <a
+                  href="https://github.com/pnowajew/portfolio/blob/main/data_science/ML_supervised_final.ipynb"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/icon/project-3.jpg"
+                      alt="NDVI prediction"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">NDVI prediction</h3>
+                  <p class="project-category">Data Science</p>
+                </a>
+              </li>
+
+              <!-- Data Science Example -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Data Visualization"
+              >
+                <a
+                  href="https://github.com/pnowajew/portfolio/blob/main/astronomy/skymap/santiago_sky_map.png"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/icon/project-1.jpg"
+                      alt="Sky map"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Santiago's Skymap</h3>
+                  <p class="project-category">Data Visualization</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- =========================================== -->
+        <!-- - #OUTREACH -->
+        <!-- =========================================== -->
+
+        <article class="outreach" data-page="outreach">
+          <header>
+            <h2 class="h2 article-title">Outreach</h2>
+          </header>
+
+          <!-- Contenedor Superior: Matriz de Tarjetas -->
+          <section class="outreach-top-matrix">
+            <div class="outreach-top-grid">
+              <!-- 1. Medium Card -->
+              <div class="content-card outreach-top-card">
+                <div>
+                  <div class="outreach-top-header">
+                    <div class="icon-box outreach-icon-size">
+                      <ion-icon name="logo-medium"></ion-icon>
+                    </div>
+                    <h4 class="h4 outreach-heading-reset">Read My Articles</h4>
+                  </div>
+                  <p class="text-sm outreach-top-desc">
+                    Explore stories, insights, and tutorials on science and
+                    data.
+                  </p>
+                </div>
+                <a
+                  href="https://medium.com/@priscillanowajewski"
+                  target="_blank"
+                  class="form-btn outreach-action-btn"
+                >
+                  <ion-icon name="book-outline"></ion-icon>
+                  <span>Read Articles</span>
+                </a>
+              </div>
+
+              <!-- 2. YouTube Card -->
+              <div class="content-card outreach-top-card">
+                <div>
+                  <div class="outreach-top-header">
+                    <div class="icon-box outreach-icon-size">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </div>
+                    <h4 class="h4 outreach-heading-reset">Watch My Videos</h4>
+                  </div>
+                  <p class="text-sm outreach-top-desc">
+                    Explore a sample of my TV interviews! Soon talks, and visual
+                    walkthroughs.
+                  </p>
+                </div>
+                <a
+                  href="https://www.youtube.com/@priscilla.nowajewski"
+                  target="_blank"
+                  class="form-btn outreach-action-btn"
+                >
+                  <ion-icon name="videocam-outline"></ion-icon>
+                  <span>Watch Videos</span>
+                </a>
               </div>
             </div>
-            <a href="https://scholar.google.com/citations?user=_zwyirUAAAAJ&hl=en" target="_blank" class="form-btn" style="display: inline-flex; width: auto; padding: 8px 16px; font-size: var(--fs-8);">
-              <ion-icon name="document-text-outline"></ion-icon>
-              <span>Google Scholar</span>
-            </a>
-          </div>
-        </section>
+          </section>
 
-        <section class="publications-posts">
+          <!-- Contenedor Inferior: Filtros y Tarjetas -->
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Books</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Podcasts</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Press</button>
+              </li>
+              <li class="filter-item"><button data-filter-btn>Art</button></li>
+            </ul>
 
-          <ul class="publications-list">
-
-            <li class="publications-post-item">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0019103517305407" target="_blank">
-
-                <figure class="publications-banner-box">
-                  <img src="./assets/icon/publications-1.jpg" alt="Fluid Dynamics Research" loading="lazy">
-                </figure>
-
-                <div class="publications-content">
-
-                  <div class="publications-meta">
-                    <p class="publications-category">Principal Investigator </p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-06-15">Jun 2025</time>
-                  </div>
-
-                  <h3 class="h3 publications-item-title">Atmospheric dynamics and habitability range in Earth-like aquaplanets obliquity simulations</h3>
-
-                  <p class="publications-text">
-                    Investigating atmospheric dynamics and habitability range in Earth-like aquaplanets obliquity simulations using advanced fluid dynamics models.
-                  </p>
-
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
                 </div>
-
-              </a>
-            </li>
-
-            <li class="publications-post-item">
-              <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13098/130981I/Correlating-pathlength-variability-with-atmospheric-dynamics-at-ALMA/10.1117/12.3019484.short" target="_blank">
-
-                <figure class="publications-banner-box">
-                  <img src="./assets/icon/publications-2.jpg" alt="Climatology Study" loading="lazy">
-                </figure>
-
-                <div class="publications-content">
-
-                  <div class="publications-meta">
-                    <p class="publications-category">Principal Investigator</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-10-12">Oct 2024</time>
-                  </div>
-
-                  <h3 class="h3 publications-item-title">Correlating pathlength variability with atmospheric dynamics at ALMA</h3>
-
-                  <p class="publications-text">
-                    Understanding the relationship between atmospheric dynamics and pathlength variability at ALMA to enhance observational accuracy.
-                  </p>
-
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
                 </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Books</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Podcasts</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Press</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Art</button>
+                </li>
+              </ul>
+            </div>
 
-              </a>
-            </li>
-
-            <li class="publications-post-item">
-              <a href="https://ieeexplore.ieee.org/abstract/document/11302819" target="_blank">
-
-                <figure class="publications-banner-box">
-                  <img src="./assets/icon/publications-3.jpg" alt="Machine Learning in Climatology" loading="lazy">
-                </figure>
-
-                <div class="publications-content">
-
-                  <div class="publications-meta">
-                    <p class="publications-category">Conference Paper</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-03-22">Mar 2024</time>
+            <ul class="project-list outreach-grid-layout">
+              <!-- Libro 1 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="books"
+              >
+                <a
+                  href="https://a.co/d/7hWE48m"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-1.jpg"
+                      alt="Ice, Rock, and Beauty"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Books</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2026-01-01" class="outreach-time"
+                          >Featured</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        Ice, Rock, and Beauty: The Myriad Objects of the Solar
+                        System
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Featured biography and scientific contributions within the
+                      solar system publication.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 publications-item-title">Seasonal time-series prediction of pathlength variability at ALMA
-</h3>
-
-                  <p class="publications-text">
-                    Applying machine learning techniques to predict seasonal time-series of pathlength variability at ALMA for improved observational planning.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="publications-post-item">
-              <a href="https://journals.sagepub.com/doi/full/10.1089/ast.2020.2342" target="_blank">
-
-                <figure class="publications-banner-box">
-                  <img src="./assets/icon/publications-4.jpg" alt="Climatology Patterns" loading="lazy">
-                </figure>
-
-                <div class="publications-content">
-
-                  <div class="publications-meta">
-                    <p class="publications-category">Collaboration</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-07-19">Jul 2023</time>
+              <!-- Libro 2 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="books"
+              >
+                <a
+                  href="https://a.co/d/g3Mrewo"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-2.jpg"
+                      alt="Empowering Women in STEM"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Books</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2026-01-01" class="outreach-time"
+                          >Featured</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        Empowering Women in STEM: Working Together to Inspire
+                        the Future
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Highlighting career paths and mentorship in science and
+                      technology.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 publications-item-title">Habitability Models for Astrobiology</h3>
-
-                  <p class="publications-text">
-                    Collaborative research on habitability models for astrobiology, focusing on the potential for life in various planetary environments.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="publications-post-item">
-              <a href="https://iopscience.iop.org/article/10.1088/2041-8205/734/1/L1/meta" target="_blank">
-
-                <figure class="publications-banner-box">
-                  <img src="./assets/icon/publications-5.jpg" alt="Thesis" loading="lazy">
-                </figure>
-
-                <div class="publications-content">
-
-                  <div class="publications-meta">
-                    <p class="publications-category">Collaboration</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-12-10">Dec 2022</time>
+              <!-- Libro 3 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="books"
+              >
+                <a
+                  href="https://a.co/d/65iVfbc"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-3.jpg"
+                      alt="What's Space Got To Do With It?"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Books</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2026-01-01" class="outreach-time"
+                          >Featured</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        What's Space Got To Do With It?: 10 Life Lessons For
+                        Personal Growth
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Reflections on science, professional growth, and lessons
+                      inspired by space.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 publications-item-title">EPOXI: COMET 103P/HARTLEY 2 OBSERVATIONS FROM A WORLDWIDE CAMPAIGN</h3>
-
-                  <p class="publications-text">
-                    NASA EPOXI mission observations of Comet 103P/Hartley 2, conducted through a collaborative worldwide campaign to study cometary activity and composition.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="publications-post-item">
-              <a href="https://zenodo.org/records/10284498" target="_blank">
-
-                <figure class="publications-banner-box">
-                  <img src="./assets/icon/publications-6.jpg" alt="Astronomical Instrumentation" loading="lazy">
-                </figure>
-
-                <div class="publications-content">
-
-                  <div class="publications-meta">
-                    <p class="publications-category">Presentation</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-12-06">Dec 2023</time>
+              <!-- Libro 4 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="books"
+              >
+                <a href="#" target="_blank" class="outreach-card-link">
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-4.jpg"
+                      alt="Vida: su origen, evolución y búsqueda en el espacio"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Books</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2026-01-01" class="outreach-time"
+                          >Author</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        Life: Its Origin, Evolution, and Search in Space
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Author of Chapter 8, focusing on astrobiology and
+                      planetary evolution.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 publications-item-title">The impact of weather on ALMA operations</h3>
+              <!-- Podcast 1 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="podcasts"
+              >
+                <a
+                  href="https://open.spotify.com/episode/3OXSvvkd3ogO36zluCofDW"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-5.jpg"
+                      alt="Puerto de Ideas"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Podcasts</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2024-01-01" class="outreach-time"
+                          >Audio</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        The Future of Astronomy (In Spanish)
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Conversation with Teresa Panque, Maria Teresa Ruiz, and
+                      Priscilla Nowajewski.
+                    </p>
+                  </div>
+                </a>
+              </li>
 
-                  <p class="publications-text">
-                    Climatological analysis with insights for the impact of 10 years of weather on ALMA operations.
-                  </p>
+              <!-- Podcast 2 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="podcasts"
+              >
+                <a
+                  href="https://open.spotify.com/episode/638UjjGOd5NLWYwIsSHmMk"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-6.jpg"
+                      alt="Rocadictos"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Podcasts</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2024-01-01" class="outreach-time"
+                          >Audio</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        Rocadictos: How to Search for an Exoplanet? (In Spanish)
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Conversation and details on detecting worlds beyond our
+                      solar system.
+                    </p>
+                  </div>
+                </a>
+              </li>
 
+              <!-- Podcast 3 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="podcasts"
+              >
+                <a
+                  href="https://open.spotify.com/episode/6i8GGwjox2Z9etJZZa7g8R"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-1.jpg"
+                      alt="Mujeres con Ciencia"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Podcasts</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2024-01-01" class="outreach-time"
+                          >Audio</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        Beyond the Stars (In Spanish)
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Priscilla Nowajewski and science with purpose.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Prensa 1 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="press"
+              >
+                <a
+                  href="https://www.theclinic.cl/2021/10/22/priscilla-nowajewski-cientifica-la-gente-se-ha-enamorado-de-marte-tratando-de-buscar-vida-ahi/"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-2.jpg"
+                      alt="The Clinic"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Press</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2021-10-22" class="outreach-time"
+                          >Oct 22, 2021</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        People have fallen in love with Mars trying to find life
+                        there (In Spanish)
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Interview on Martian exploration and the fascination with
+                      finding biological traces.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Prensa 2 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="press"
+              >
+                <a
+                  href="https://elpais.com/mexico/2023-09-13/que-opina-la-ciencia-sobre-los-ovnis-y-la-vida-extraterrestre-no-vamos-a-encontrar-humanoides-probablemente-microorganismos.html?outputType=amp"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-3.jpg"
+                      alt="El País"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Press</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2023-09-13" class="outreach-time"
+                          >Sep 13, 2023</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        What does science say about UFOs and extraterrestrial
+                        life? (In Spanish)
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Scientific reflections on the search for microorganisms in
+                      the universe.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Prensa 3 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="press"
+              >
+                <a
+                  href="https://www.elmostrador.cl/cultura/ciencia-cultura/2025/04/26/astronoma-chilena-alerta-que-inna-afectaria-al-menos-tres-proyectos-de-la-astronomia-internacional/"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-4.jpg"
+                      alt="El Mostrador"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Press</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2025-04-26" class="outreach-time"
+                          >Apr 26, 2025</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        Chilean astronomer warns that Inna would affect projects
+                        (In Spanish)
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Analysis on the impact of at least three international
+                      astronomy projects.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Art 1 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="art"
+              >
+                <a
+                  href="https://www.instagram.com/arte.coalescente"
+                  target="_blank"
+                  class="outreach-card-link"
+                >
+                  <figure class="project-img outreach-img-ratio">
+                    <img
+                      src="./assets/icon/blog-5.jpg"
+                      alt="Watercolor Art"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="outreach-card-padding">
+                    <div>
+                      <div class="outreach-meta">
+                        <p class="outreach-category">Art</p>
+                        <span class="dot outreach-dot"></span>
+                        <time datetime="2026-01-01" class="outreach-time"
+                          >@arte.coalescente</time
+                        >
+                      </div>
+                      <h3 class="project-title outreach-card-title">
+                        Watercolor Space & Botanical Illustrations
+                      </h3>
+                    </div>
+                    <p class="project-category outreach-card-desc">
+                      Original watercolors depicting Saturn, Mars, and botanical
+                      subjects.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- =========================================== -->
+        <!-- - #PUBLICATIONS -->
+        <!-- =========================================== -->
+
+        <article class="publications" data-page="publications">
+          <header>
+            <h2 class="h2 article-title">Papers</h2>
+          </header>
+
+          <!-- Prominent Google Scholar Link -->
+          <section style="margin-bottom: 25px">
+            <div
+              class="content-card"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 25px;
+                min-height: auto;
+              "
+            >
+              <div style="display: flex; align-items: center; gap: 15px">
+                <div class="icon-box" style="font-size: 24px">
+                  <ion-icon name="school-outline"></ion-icon>
                 </div>
-
+                <div>
+                  <h4 class="h4" style="margin-bottom: 3px">
+                    Explore My Research Publications
+                  </h4>
+                  <p
+                    class="text-sm"
+                    style="color: var(--light-gray); font-size: var(--fs-8)"
+                  >
+                    Browse my complete peer-reviewed papers and academic
+                    citations on Google Scholar.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://scholar.google.com/citations?user=_zwyirUAAAAJ&hl=en"
+                target="_blank"
+                class="form-btn"
+                style="
+                  display: inline-flex;
+                  width: auto;
+                  padding: 8px 16px;
+                  font-size: var(--fs-8);
+                "
+              >
+                <ion-icon name="document-text-outline"></ion-icon>
+                <span>Google Scholar</span>
               </a>
-            </li>
+            </div>
+          </section>
 
-          </ul>
+          <section class="publications-posts">
+            <ul class="publications-list">
+              <li class="publications-post-item">
+                <a
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S0019103517305407"
+                  target="_blank"
+                >
+                  <figure class="publications-banner-box">
+                    <img
+                      src="./assets/icon/publications-1.jpg"
+                      alt="Fluid Dynamics Research"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        </section>
+                  <div class="publications-content">
+                    <div class="publications-meta">
+                      <p class="publications-category">
+                        Principal Investigator
+                      </p>
 
-      </article>
+                      <span class="dot"></span>
 
-    
-      <!--
+                      <time datetime="2025-06-15">Jun 2025</time>
+                    </div>
+
+                    <h3 class="h3 publications-item-title">
+                      Atmospheric dynamics and habitability range in Earth-like
+                      aquaplanets obliquity simulations
+                    </h3>
+
+                    <p class="publications-text">
+                      Investigating atmospheric dynamics and habitability range
+                      in Earth-like aquaplanets obliquity simulations using
+                      advanced fluid dynamics models.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="publications-post-item">
+                <a
+                  href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13098/130981I/Correlating-pathlength-variability-with-atmospheric-dynamics-at-ALMA/10.1117/12.3019484.short"
+                  target="_blank"
+                >
+                  <figure class="publications-banner-box">
+                    <img
+                      src="./assets/icon/publications-2.jpg"
+                      alt="Climatology Study"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="publications-content">
+                    <div class="publications-meta">
+                      <p class="publications-category">
+                        Principal Investigator
+                      </p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-10-12">Oct 2024</time>
+                    </div>
+
+                    <h3 class="h3 publications-item-title">
+                      Correlating pathlength variability with atmospheric
+                      dynamics at ALMA
+                    </h3>
+
+                    <p class="publications-text">
+                      Understanding the relationship between atmospheric
+                      dynamics and pathlength variability at ALMA to enhance
+                      observational accuracy.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="publications-post-item">
+                <a
+                  href="https://ieeexplore.ieee.org/abstract/document/11302819"
+                  target="_blank"
+                >
+                  <figure class="publications-banner-box">
+                    <img
+                      src="./assets/icon/publications-3.jpg"
+                      alt="Machine Learning in Climatology"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="publications-content">
+                    <div class="publications-meta">
+                      <p class="publications-category">Conference Paper</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-03-22">Mar 2024</time>
+                    </div>
+
+                    <h3 class="h3 publications-item-title">
+                      Seasonal time-series prediction of pathlength variability
+                      at ALMA
+                    </h3>
+
+                    <p class="publications-text">
+                      Applying machine learning techniques to predict seasonal
+                      time-series of pathlength variability at ALMA for improved
+                      observational planning.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="publications-post-item">
+                <a
+                  href="https://journals.sagepub.com/doi/full/10.1089/ast.2020.2342"
+                  target="_blank"
+                >
+                  <figure class="publications-banner-box">
+                    <img
+                      src="./assets/icon/publications-4.jpg"
+                      alt="Climatology Patterns"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="publications-content">
+                    <div class="publications-meta">
+                      <p class="publications-category">Collaboration</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-07-19">Jul 2023</time>
+                    </div>
+
+                    <h3 class="h3 publications-item-title">
+                      Habitability Models for Astrobiology
+                    </h3>
+
+                    <p class="publications-text">
+                      Collaborative research on habitability models for
+                      astrobiology, focusing on the potential for life in
+                      various planetary environments.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="publications-post-item">
+                <a
+                  href="https://iopscience.iop.org/article/10.1088/2041-8205/734/1/L1/meta"
+                  target="_blank"
+                >
+                  <figure class="publications-banner-box">
+                    <img
+                      src="./assets/icon/publications-5.jpg"
+                      alt="Thesis"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="publications-content">
+                    <div class="publications-meta">
+                      <p class="publications-category">Collaboration</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-12-10">Dec 2022</time>
+                    </div>
+
+                    <h3 class="h3 publications-item-title">
+                      EPOXI: COMET 103P/HARTLEY 2 OBSERVATIONS FROM A WORLDWIDE
+                      CAMPAIGN
+                    </h3>
+
+                    <p class="publications-text">
+                      NASA EPOXI mission observations of Comet 103P/Hartley 2,
+                      conducted through a collaborative worldwide campaign to
+                      study cometary activity and composition.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="publications-post-item">
+                <a href="https://zenodo.org/records/10284498" target="_blank">
+                  <figure class="publications-banner-box">
+                    <img
+                      src="./assets/icon/publications-6.jpg"
+                      alt="Astronomical Instrumentation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="publications-content">
+                    <div class="publications-meta">
+                      <p class="publications-category">Presentation</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-12-06">Dec 2023</time>
+                    </div>
+
+                    <h3 class="h3 publications-item-title">
+                      The impact of weather on ALMA operations
+                    </h3>
+
+                    <p class="publications-text">
+                      Climatological analysis with insights for the impact of 10
+                      years of weather on ALMA operations.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Get in Touch</h2>
-        </header>
+          <section class="contact-form">
+            <div class="content-card contact-card-wrapper">
+              <div class="icon-box contact-main-icon">
+                <ion-icon name="share-social-outline"></ion-icon>
+              </div>
 
-        <section class="contact-form">
-          
-          <div class="content-card" style="text-align: center; padding: 40px 30px;">
-            <div class="icon-box" style="margin: 0 auto 20px auto; font-size: 40px; display: inline-flex;">
-              <ion-icon name="share-social-outline"></ion-icon>
+              <h3 class="h3 form-title contact-form-title">Let's Connect</h3>
+
+              <p class="text-sm contact-desc">
+                I prefer professional networking through LinkedIn and digital
+                contact sharing. <br />
+                Feel free to reach out or save my contact details directly
+                through the links below.
+              </p>
+
+              <div class="contact-btn-group">
+                <a
+                  href="https://www.linkedin.com/in/pnowajew"
+                  target="_blank"
+                  class="form-btn contact-action-btn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <span>LinkedIn Profile</span>
+                </a>
+
+                <a
+                  href="https://hihello.com/p/6d32d950-3747-4406-8adb-608aa0946a6b"
+                  target="_blank"
+                  class="form-btn contact-action-btn contact-btn-alt"
+                >
+                  <ion-icon name="qr-code-outline"></ion-icon>
+                  <span>HiHello Card</span>
+                </a>
+              </div>
             </div>
+          </section>
+        </article>
+      </div>
+    </main>
 
-            <h3 class="h3 form-title" style="margin-bottom: 15px;">Let's Connect</h3>
+    <footer
+      style="
+        text-align: center;
+        padding: 25px 0;
+        margin-top: 40px;
+        border-top: 1px solid var(--jet);
+        color: var(--light-gray);
+        font-size: var(--fs-8);
+      "
+    >
+      <p>
+        Built with standard HTML5 & CSS • Personal modification based on
+        <a
+          href="https://github.com/codewithsadee/vcard-personal-portfolio"
+          target="_blank"
+          style="
+            color: var(--orange-yellow-crayola);
+            text-decoration: underline;
+          "
+          >codewithsadee/vcard-personal-portfolio</a
+        >
+      </p>
+    </footer>
 
-            <p class="text-sm" style="color: var(--light-gray); font-size: var(--fs-7); max-width: 500px; margin: 0 auto 25px auto;">
-              I prefer professional networking through LinkedIn and digital contact sharing. <br> Feel free to reach out or save my contact details directly through the links below.
-            </p>
-
-            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-              <a href="https://www.linkedin.com/in/pnowajew" target="_blank" class="form-btn" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: auto; padding: 12px 20px;">
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <span>LinkedIn Profile</span>
-              </a>
-
-              <a href="https://hihello.com/p/6d32d950-3747-4406-8adb-608aa0946a6b" target="_blank" class="form-btn" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: auto; padding: 12px 20px; background: var(--jet); color: var(--orange-yellow-crayola);">
-                <ion-icon name="qr-code-outline"></ion-icon>
-                <span>HiHello Card</span>
-              </a>
-            </div>
-          </div>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-  <footer style="text-align: center; padding: 25px 0; margin-top: 40px; border-top: 1px solid var(--jet); color: var(--light-gray); font-size: var(--fs-8);">
-   <p>
-      Built with standard HTML5 & CSS • Personal modification based on <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" style="color: var(--orange-yellow-crayola); text-decoration: underline;">codewithsadee/vcard-personal-portfolio</a>
-    </p>
-  </footer>
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

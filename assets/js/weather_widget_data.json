@@ -1,0 +1,20 @@
+[
+  {
+    "day": "Today",
+    "max": "15°C",
+    "min": "8°C",
+    "icon": "rainy-outline"
+  },
+  {
+    "day": "Tomorrow",
+    "max": "15°C",
+    "min": "7°C",
+    "icon": "rainy-outline"
+  },
+  {
+    "day": "Saturday",
+    "max": "17°C",
+    "min": "5°C",
+    "icon": "rainy-outline"
+  }
+]

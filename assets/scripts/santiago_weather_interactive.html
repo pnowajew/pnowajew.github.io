@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Weather Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #fbf7ef;
+            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .dashboard-container {
+            width: 100%;
+            max-width: 1250px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .forecast-widget-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+        .chart-card {
+            background: #fbf7ef;
+            border: 1px solid #d97706;
+            border-radius: 8px;
+            padding: 12px 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="chart-card">
+          <h3 class="forecast-widget-title">Santiago 5-Day ECMWF Forecast — Club Hípico</h3>
+          <canvas id="weatherChart" height="115"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const weatherData = [{"time_iso": "2026-08-27 02:00:00", "hour_str": "02", "date_str": "Aug 27", "temp": 9.0, "precip": 13.75, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-27 05:00:00", "hour_str": "05", "date_str": "Aug 27", "temp": 7.9, "precip": 0.66, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-27 08:00:00", "hour_str": "08", "date_str": "Aug 27", "temp": 8.4, "precip": 0.14, "icon": "\u26c5"}, {"time_iso": "2026-08-27 11:00:00", "hour_str": "11", "date_str": "Aug 27", "temp": 13.4, "precip": 0.09, "icon": "\u26c5"}, {"time_iso": "2026-08-27 14:00:00", "hour_str": "14", "date_str": "Aug 27", "temp": 15.4, "precip": 0.15, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-27 17:00:00", "hour_str": "17", "date_str": "Aug 27", "temp": 12.6, "precip": 5.19, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-27 20:00:00", "hour_str": "20", "date_str": "Aug 27", "temp": 10.1, "precip": 5.68, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-27 23:00:00", "hour_str": "23", "date_str": "Aug 27", "temp": 9.0, "precip": 0.73, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-28 02:00:00", "hour_str": "02", "date_str": "Aug 28", "temp": 8.1, "precip": 0.01, "icon": "\ud83c\udf19"}, {"time_iso": "2026-08-28 05:00:00", "hour_str": "05", "date_str": "Aug 28", "temp": 7.0, "precip": 0.0, "icon": "\u26c5"}, {"time_iso": "2026-08-28 08:00:00", "hour_str": "08", "date_str": "Aug 28", "temp": 7.0, "precip": 0.0, "icon": "\u2600\ufe0f"}, {"time_iso": "2026-08-28 11:00:00", "hour_str": "11", "date_str": "Aug 28", "temp": 14.0, "precip": 0.0, "icon": "\u2600\ufe0f"}, {"time_iso": "2026-08-28 14:00:00", "hour_str": "14", "date_str": "Aug 28", "temp": 15.4, "precip": 0.04, "icon": "\u26c5"}, {"time_iso": "2026-08-28 17:00:00", "hour_str": "17", "date_str": "Aug 28", "temp": 11.9, "precip": 1.33, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-28 20:00:00", "hour_str": "20", "date_str": "Aug 28", "temp": 9.4, "precip": 0.51, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-28 23:00:00", "hour_str": "23", "date_str": "Aug 28", "temp": 7.4, "precip": 0.0, "icon": "\ud83c\udf19"}, {"time_iso": "2026-08-29 02:00:00", "hour_str": "02", "date_str": "Aug 29", "temp": 6.5, "precip": 0.0, "icon": "\u26c5"}, {"time_iso": "2026-08-29 05:00:00", "hour_str": "05", "date_str": "Aug 29", "temp": 5.4, "precip": 0.0, "icon": "\u26c5"}, {"time_iso": "2026-08-29 08:00:00", "hour_str": "08", "date_str": "Aug 29", "temp": 6.8, "precip": 0.47, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-29 11:00:00", "hour_str": "11", "date_str": "Aug 29", "temp": 13.2, "precip": 0.53, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-29 14:00:00", "hour_str": "14", "date_str": "Aug 29", "temp": 16.0, "precip": 0.24, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-29 17:00:00", "hour_str": "17", "date_str": "Aug 29", "temp": 16.6, "precip": 0.0, "icon": "\u26c5"}, {"time_iso": "2026-08-29 20:00:00", "hour_str": "20", "date_str": "Aug 29", "temp": 11.9, "precip": 0.0, "icon": "\ud83c\udf19"}, {"time_iso": "2026-08-29 23:00:00", "hour_str": "23", "date_str": "Aug 29", "temp": 8.9, "precip": 0.0, "icon": "\ud83c\udf19"}, {"time_iso": "2026-08-30 02:00:00", "hour_str": "02", "date_str": "Aug 30", "temp": 6.6, "precip": 0.0, "icon": "\ud83c\udf19"}, {"time_iso": "2026-08-30 05:00:00", "hour_str": "05", "date_str": "Aug 30", "temp": 4.8, "precip": 0.0, "icon": "\ud83c\udf19"}, {"time_iso": "2026-08-30 08:00:00", "hour_str": "08", "date_str": "Aug 30", "temp": 5.7, "precip": 0.02, "icon": "\u2600\ufe0f"}, {"time_iso": "2026-08-30 11:00:00", "hour_str": "11", "date_str": "Aug 30", "temp": 15.2, "precip": 0.0, "icon": "\u26c5"}, {"time_iso": "2026-08-30 14:00:00", "hour_str": "14", "date_str": "Aug 30", "temp": 17.5, "precip": 0.0, "icon": "\u2601\ufe0f"}, {"time_iso": "2026-08-30 17:00:00", "hour_str": "17", "date_str": "Aug 30", "temp": 16.6, "precip": 0.15, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-30 20:00:00", "hour_str": "20", "date_str": "Aug 30", "temp": 11.4, "precip": 2.72, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-30 23:00:00", "hour_str": "23", "date_str": "Aug 30", "temp": 10.2, "precip": 0.31, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-31 02:00:00", "hour_str": "02", "date_str": "Aug 31", "temp": 9.0, "precip": 0.15, "icon": "\ud83c\udf27\ufe0f"}, {"time_iso": "2026-08-31 05:00:00", "hour_str": "05", "date_str": "Aug 31", "temp": 9.2, "precip": 0.0, "icon": "\u2601\ufe0f"}, {"time_iso": "2026-08-31 08:00:00", "hour_str": "08", "date_str": "Aug 31", "temp": 9.3, "precip": 0.0, "icon": "\u26c5"}, {"time_iso": "2026-08-31 11:00:00", "hour_str": "11", "date_str": "Aug 31", "temp": 16.0, "precip": 0.0, "icon": "\u26c5"}, {"time_iso": "2026-08-31 14:00:00", "hour_str": "14", "date_str": "Aug 31", "temp": 18.5, "precip": 0.0, "icon": "\u2601\ufe0f"}, {"time_iso": "2026-08-31 17:00:00", "hour_str": "17", "date_str": "Aug 31", "temp": 17.5, "precip": 0.06, "icon": "\u26c5"}, {"time_iso": "2026-08-31 20:00:00", "hour_str": "20", "date_str": "Aug 31", "temp": 13.2, "precip": 0.0, "icon": "\u26c5"}];
+
+        const backgroundDaysPlugin = {
+            id: 'backgroundDays',
+            beforeDraw(chart) {
+                const { ctx, chartArea, scales } = chart;
+                if (!chartArea) return;
+                ctx.save();
+                let lastDate = null;
+                let drawBg = false;
+                weatherData.forEach((d, i) => {
+                    let currentDate = d.date_str;
+                    if (currentDate !== lastDate) {
+                        drawBg = !drawBg;
+                        lastDate = currentDate;
+                    }
+                    if (drawBg && i < weatherData.length - 1) {
+                        let xStart = scales.x.getPixelForValue(i);
+                        let xEnd = scales.x.getPixelForValue(i + 1);
+                        ctx.fillStyle = 'rgba(245, 235, 217, 0.5)';
+                        ctx.fillRect(xStart, chartArea.top, xEnd - xStart, chartArea.height);
+                    }
+                });
+                ctx.restore();
+            }
+        };
+
+        const weatherIconsPlugin = {
+            id: 'weatherIcons',
+            afterDatasetsDraw(chart) {
+                const { ctx, scales } = chart;
+                const meta = chart.getDatasetMeta(0);
+                ctx.save();
+                ctx.font = '12px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'bottom';
+                meta.data.forEach((point, index) => {
+                    const d = weatherData[index];
+                    ctx.fillText(d.icon, point.x, point.y - 10);
+                });
+                ctx.restore();
+            }
+        };
+
+        const labels = weatherData.map(d => d.time_iso);
+        const temps = weatherData.map(d => d.temp);
+        const precips = weatherData.map(d => d.precip);
+
+        let lastDateSeen = null;
+        const formattedLabels = weatherData.map(d => {
+            let timePart = d.hour_str;
+            let datePart = d.date_str;
+            if (datePart !== lastDateSeen) {
+                lastDateSeen = datePart;
+                return [timePart, datePart];
+            }
+            return [timePart, ""];
+        });
+
+        const ctx = document.getElementById('weatherChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: formattedLabels,
+                datasets: [
+                    {
+                        type: 'line',
+                        label: 'Temperature (°C)',
+                        data: temps,
+                        borderColor: '#b45309',
+                        backgroundColor: '#b45309',
+                        borderWidth: 1.3,
+                        pointRadius: 2,
+                        pointBackgroundColor: '#fbf7ef',
+                        pointBorderColor: '#b45309',
+                        yAxisID: 'y_temp',
+                        order: 1
+                    },
+                    {
+                        type: 'bar',
+                        label: 'Precipitation (mm)',
+                        data: precips,
+                        backgroundColor: '#0284c7',
+                        yAxisID: 'y_precip',
+                        order: 2,
+                        barPercentage: 0.55
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                interaction: { mode: 'index', intersect: false },
+                scales: {
+                    x: {
+                        grid: { color: '#e7dfd2' },
+                        ticks: { color: '#334155', font: { size: 8, weight: '600' }, maxRotation: 0, align: 'center' }
+                    },
+                    y_temp: {
+                        type: 'linear', position: 'left',
+                        title: { display: true, text: 'Temperature [°C]', color: '#b45309', font: { weight: '600', size: 9 } },
+                        grid: { color: '#e7dfd2', borderDash: [4, 4] },
+                        ticks: { color: '#334155', font: { size: 8 } }
+                    },
+                    y_precip: {
+                        type: 'linear', position: 'right',
+                        title: { display: true, text: 'Precipitation [mm]', color: '#0284c7', font: { weight: '600', size: 9 } },
+                        grid: { drawOnChartArea: false },
+                        ticks: { color: '#334155', font: { size: 8 } },
+                        suggestedMax: 10
+                    }
+                },
+                plugins: {
+                    legend: { position: 'top', labels: { color: '#1e293b', font: { weight: '600', size: 9 } } },
+                    tooltip: {
+                        callbacks: {
+                            title: function(context) {
+                                let d = weatherData[context[0].dataIndex];
+                                return `${d.date_str} ${d.hour_str}:00 ${d.icon}`;
+                            }
+                        }
+                    }
+                }
+            },
+            plugins: [backgroundDaysPlugin, weatherIconsPlugin]
+        });
+    </script>
+</body>
+</html>
