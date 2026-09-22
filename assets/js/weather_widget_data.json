@@ -1,20 +1,23 @@
-[
-  {
-    "day": "Today",
-    "max": "15°C",
-    "min": "8°C",
-    "icon": "rainy-outline"
-  },
-  {
-    "day": "Tomorrow",
-    "max": "15°C",
-    "min": "7°C",
-    "icon": "rainy-outline"
-  },
-  {
-    "day": "Saturday",
-    "max": "17°C",
-    "min": "5°C",
-    "icon": "rainy-outline"
-  }
-]
+{
+  "last_updated": "22 Sep 2026, 19:07",
+  "forecast": [
+    {
+      "day": "Today",
+      "max": "16°C",
+      "min": "16°C",
+      "icon": "cloudy-outline"
+    },
+    {
+      "day": "Tomorrow",
+      "max": "24°C",
+      "min": "10°C",
+      "icon": "partly-sunny-outline"
+    },
+    {
+      "day": "Wednesday",
+      "max": "22°C",
+      "min": "14°C",
+      "icon": "cloudy-outline"
+    }
+  ]
+}

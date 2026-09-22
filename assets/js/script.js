@@ -184,15 +184,26 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   async function loadWeatherCards() {
     try {
-      // Lee el archivo JSON generado automáticamente por tu script de Python
+      // Lee el archivo JSON estructurado generado por tu script de Python
       const response = await fetch("./assets/js/weather_widget_data.json");
       const data = await response.json();
+
+      // 1. Opcional: Mostrar la fecha de última actualización si creaste el elemento en el HTML
+      const timestampElement = document.getElementById(
+        "weather-update-timestamp",
+      );
+      if (timestampElement && data.last_updated) {
+        timestampElement.innerText = `Updated: ${data.last_updated}`;
+      }
 
       const container = document.getElementById("weather-cards-container");
       if (!container) return;
 
+      // 2. Extraer la lista de tarjetas desde data.forecast
+      const forecastList = data.forecast || data; // Por seguridad, compatible por si lee lista directa
+
       let html = "";
-      data.forEach((card, index) => {
+      forecastList.forEach((card, index) => {
         html += `
           <div class="content-card forecast-card-item">
             <span class="forecast-day-label">${card.day}</span>
