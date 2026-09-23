@@ -1,20 +1,23 @@
 {
-  "last_updated": "23 Sep 2026, 15:20",
+  "last_updated": "23 Sep 2026, 17:44",
   "forecast": [
     {
-      "day": "Today",
+      "day": "Tue",
+      "date": "Sep 22",
       "max": "19°C",
       "min": "19°C",
       "icon": "cloudy-outline"
     },
     {
-      "day": "Tomorrow",
+      "day": "Wed",
+      "date": "Sep 23",
       "max": "23°C",
       "min": "13°C",
       "icon": "cloudy-outline"
     },
     {
-      "day": "Thursday",
+      "day": "Thu",
+      "date": "Sep 24",
       "max": "20°C",
       "min": "13°C",
       "icon": "cloudy-outline"
