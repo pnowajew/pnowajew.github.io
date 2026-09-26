@@ -1,26 +1,26 @@
 {
-  "last_updated": "25 Sep 2026, 20:06",
+  "last_updated": "26 Sep 2026, 09:41",
   "forecast": [
-    {
-      "day": "Thu",
-      "date": "Sep 24",
-      "max": "14°C",
-      "min": "14°C",
-      "icon": "cloudy-outline"
-    },
     {
       "day": "Fri",
       "date": "Sep 25",
-      "max": "23°C",
-      "min": "12°C",
-      "icon": "rainy-outline"
+      "max": "16°C",
+      "min": "16°C",
+      "icon": "cloudy-outline"
     },
     {
       "day": "Sat",
       "date": "Sep 26",
-      "max": "22°C",
+      "max": "24°C",
       "min": "12°C",
-      "icon": "cloudy-outline"
+      "icon": "partly-sunny-outline"
+    },
+    {
+      "day": "Sun",
+      "date": "Sep 27",
+      "max": "23°C",
+      "min": "14°C",
+      "icon": "partly-sunny-outline"
     }
   ]
 }
